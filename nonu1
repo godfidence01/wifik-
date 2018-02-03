@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "THIS SCRIPT BELONGS TO GODFIDENCE"
+echo "godfidence01@gmail.com"
+echo "lets get started!!"
+
+
+echo "Enter wireless interface"
+read iface
+echo "Now starting your wireless card in monitor mode"
+airmon-ng start $iface
+echo "showing your monitor mode interface"
+
+
+
+echo "Enter the new monitor mode interface"
+read iface1
+
+echo "showing available access point"
+airodump-ng $iface1
